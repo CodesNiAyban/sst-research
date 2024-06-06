@@ -1,12 +1,12 @@
 import { StackContext, StaticSite, use } from "sst/constructs";
-// import { ApiStack } from "./ApiStack";
+import { ApiStack } from "./ApiStack";
 // import { AuthStack } from "./AuthStack";
 // import { StorageStack } from "./StorageStack";
 
 export function FrontendStack({ stack, app }: StackContext) {
-//   const { api } = use(ApiStack);
+  const { api } = use(ApiStack);
 //   const { auth } = use(AuthStack);
-//   const { bucket } = use(StorageStack);
+  // const { bucket } = use(StorageStack);
 
   // Define our React app
   const site = new StaticSite(stack, "ReactSite", {
